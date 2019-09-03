@@ -13,7 +13,7 @@ public class TestService {
 
     @GET
     public String getTest(){
-        return "Hello World";
+        return "Nu virker det";
     }
 
     @Path("json")
