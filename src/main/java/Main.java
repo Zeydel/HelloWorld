@@ -6,6 +6,7 @@ import java.io.File;
 public class Main {
 
     public static void main(String[] args) throws LifecycleException {
+
         Tomcat tomcat = new Tomcat();
         tomcat.setBaseDir("temp");
         String port = System.getenv("PORT"); //Til Heroku
@@ -21,6 +22,8 @@ public class Main {
         tomcat.start();
 
         tomcat.getServer().await();
+
+
 
     }
 }
